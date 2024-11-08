@@ -15,7 +15,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-activity-ronda # Replace [yourname] with your actual name
+  name: k8s-activity-ronda
   labels:
     app: nginx
 spec:
@@ -31,7 +31,7 @@ spec:
       initContainers:
       - name: init-html
         image: curlimages/curl
-        command: ["sh", "-c", "curl -o /usr/share/nginx/html/index.html https://raw.githubusercontent.com/RondaKuraI/Kubernetes_Ronda/main/index.html"] # Replace with your GitHub info
+        command: ["sh", "-c", "curl -o /usr/share/nginx/html/index.html https://raw.githubusercontent.com/RondaKuraI/Kubernetes_Ronda/main/index.html"]
         volumeMounts:
         - name: html-volume
           mountPath: /usr/share/nginx/html
