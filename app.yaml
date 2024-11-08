@@ -15,7 +15,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-activity-Ronda # Replace [yourname] with your actual name
+  name: k8s-activity-ronda # Replace [yourname] with your actual name
   labels:
     app: nginx
 spec:
